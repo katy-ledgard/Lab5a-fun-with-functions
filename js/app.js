@@ -11,11 +11,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-    let numberAdd = (a + b) 
-    let stringAdd = ("The sum of " + a + " and " + b + " is " + (a + b) + ".")
+    let numberAdd = (a + b); 
+    let stringAdd = ("The sum of " + a + " and " + b + " is " + (a + b) + ".");
     
     const sumArray =[numberAdd, stringAdd];
-   console.log(sumArray[0], sumArray[1])
+//    console.log(sumArray[0], sumArray[1])
     return sumArray;
 }
 
@@ -34,11 +34,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+    let numberMultiply = (a * b);
+    let stringMultiply = ("The product of " + a + " and " + b + " is " + (a * b) + ".");
+    
+    // console.log([numberMultiply, stringMultiply]);
+    
+    return [numberMultiply, stringMultiply];
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
