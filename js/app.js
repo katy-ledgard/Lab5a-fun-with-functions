@@ -1,6 +1,6 @@
 'use strict';
 
-console.log("Hello")
+// console.log("Hello")
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
 Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
@@ -61,10 +61,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    // let elementOne = sum();
-    // console.log(elementOne);
+    let sum1 = sum(a, b)[0];
+    let sum2 = sum(sum1, c)[0];
+    console.log(sum2)
+
+    let multi1 = multiply(a, b)[0];
+    let multi2 = multiply(multi1, c)[0];
+    // console.log(multi2)
+
+    let string1 = a + " and " + c + " and " + c + " sum to " + sum2 + ".";
+    // console.log(string1)
+    let string2 = "The product of " + a + " and " + b + " and " + c + " is " + multi2 + ".";
+    // console.log(string2)
+
+    // console.log([sum2, multi2, string1, string2])
+
+    return [sum2, multi2, string1, string2]
 
 }
+
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
